@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Morpion</title>
+
+    <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container">
+        <h1 class="navbar-brand text-white">
+            Morpion
+        </h1>
+    </div>
+</nav>
+
+<section class="game-section">
+    <div class="container">
+        <div class="card">
+            <h2 class="h5 card-header">
+                Paramétrage de la partie
+            </h2>
+
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="player-1">
+                        Nom du joueur 1 :
+                    </label>
+
+                    <input id="player-1" type="text" class="form-control" placeholder="Joueur 1">
+                </div>
+
+                <div class="form-group">
+                    <label for="player-2">
+                        Nom du joueur 2 :
+                    </label>
+
+                    <input id="player-2" type="text" class="form-control" placeholder="Joueur 2">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="game-section">
+    <div class="container">
+        <div class="card">
+            <h2 class="h5 card-header">
+                Jeu
+            </h2>
+
+            <div class="card-body text-center">
+                <div class="text-center">
+                    Tour de <span id="player-name-display">Cédric</span>
+                </div>
+
+                <div class="square-wrapper">
+                    <div class="square-line">
+                        <div class="square">
+                            <span class="square-text square-text-red"></span>
+                        </div>
+
+                        <div class="square">
+                            <span class="square-text square-text-blue"></span>
+                        </div>
+
+                        <div class="square">
+                            <span class="square-text"></span>
+                        </div>
+                    </div>
+
+                    <div class="square-line">
+                        <div class="square">
+                            <span class="square-text"></span>
+                        </div>
+
+                        <div class="square">
+                            <span class="square-text"></span>
+                        </div>
+
+                        <div class="square">
+                            <span class="square-text"></span>
+                        </div>
+                    </div>
+
+                    <div class="square-line">
+                        <div class="square">
+                            <span class="square-text"></span>
+                        </div>
+
+                        <div class="square">
+                            <span class="square-text"></span>
+                        </div>
+
+                        <div class="square">
+                            <span class="square-text"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="game-section">
+    <div class="text-center">
+        <button type="button" class="btn btn-primary btn-lg" id="restart-button">
+            Recommencer la partie
+        </button>
+    </div>
+</section>
+
+<script src="assets/scripts/variables.js"></script>
+<script src="assets/scripts/functions.js"></script>
+<script src="assets/scripts/listeners.js"></script>
+<script src="assets/scripts/scripts.js"></script>
+
+</body>
+</html>
